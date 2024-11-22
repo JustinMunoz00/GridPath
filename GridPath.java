@@ -17,7 +17,8 @@ public class GridPath {
      * grid.
      */
     public Location getNextLoc(int row, int col) {
-        /* to be implemented in part (a) */ }
+        return null;
+    }
 
     /**
      * Computes and returns the sum of all values on a path through grid, as
@@ -29,5 +30,16 @@ public class GridPath {
      * grid.
      */
     public int sumPath(int row, int col) {
-        /* to be implemented in part (b) */ }
+        return 0;
+    }
+    public String toString() {
+        String s = "";
+        for (int[] row:grid){
+            for (int col:row){
+                s += col + " ";
+            }
+            s += "\n";
+        }
+        return s;
+    }
 }
