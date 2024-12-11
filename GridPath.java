@@ -17,7 +17,10 @@ public class GridPath {
      * grid.
      */
     public Location getNextLoc(int row, int col) {
-        return null;
+        int below = grid[row+1][col];
+        int right = grid[row][col+1];
+        if (below < right) return new Location(row+1, col);
+        else return new Location(row, col+1);
     }
 
     /**

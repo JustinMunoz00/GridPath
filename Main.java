@@ -10,5 +10,7 @@ public class Main
         };
         GridPath one = new GridPath(nums);
         System.out.println(one);
+        Location g = one.getNextLoc(0, 0);
+        System.out.println(g);
     }
 }
